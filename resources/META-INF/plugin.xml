@@ -1,0 +1,29 @@
+<idea-plugin version="2">
+    <id>vascoosx.scala.cellmode</id>
+    <name>Scala cell mode for IDEA</name>
+    <version>1.0</version>
+    <vendor email="vascoosx@gmail.com" url="https://github.com/vascoosx">vascoosx</vendor>
+
+    <description><![CDATA[
+    Lets you send your scala code to a scala console
+    ]]></description>
+
+    <change-notes><![CDATA[
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="145.0"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="execCell" class="ScalaCellMode" text="exec cell">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl T"/>
+        </action>
+    </actions>
+
+</idea-plugin>
